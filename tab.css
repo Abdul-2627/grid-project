@@ -1,0 +1,202 @@
+@media only screen and (max-width:1100px){
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    :root{
+        --font: "Ubuntu", serif;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+    }
+    /* Nav Section  */
+    .nav{
+        display: grid;
+        height: 50px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: var(--font);
+    }
+    .logo h6{
+        font-size: 2rem;
+        margin-left: 0px;
+        color: white;
+    }
+    .nav-items ul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .nav ul a{
+    text-align: center;
+    font-size: 0.7rem;
+    }
+    /* Home Section  */
+.home-container{
+    display: grid;
+    width: 100%;
+    height:500px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+    .text{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        left: 0%;
+        padding: 5px;
+        text-align: center;
+        background-color: red;
+    }
+    .text h1{
+        font-size: 2rem;
+        color: ivory;
+        margin: 3px 0px;
+    }
+    
+    .text p{
+        opacity: 0.6;
+        font-size: .8rem;
+        margin: 3px 0px;
+        color: ivory;
+    }
+    .text button{
+        padding:10px 32px;
+        margin: 3px 0px;
+        font-size: .8rem;
+        color: ivory;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 3px;
+        outline: none;
+        font-weight: 600;
+        cursor:pointer;
+        font-family: var(--font);
+    }
+    .text button:hover{
+        background-color: #333;
+        border: 1px solid #333;
+        outline: none;
+    }
+    /* About Section  */
+    .about-container{
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 6px;
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font);
+    }
+    .about-container div{
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+        height: 100%;
+    }
+    
+    .about-container img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .about-container.a-text{
+        margin: 0px;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+    }
+    .a-text h1{
+        padding:5px;
+        font-size: 2.5rem;
+        font-family: var(--font);
+    }
+    .a-text p{
+        padding:0px 10px;
+        font-size: 1rem;
+        line-height: 1.4;
+        letter-spacing: 1.3px;
+        font-family: var(--font);
+    }
+    /* Destintion Section */
+ .header{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: var(--font);
+ }
+ .destination-container{
+    width: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-row-gap: 20px;
+    font-family: var(--font);
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+ }
+ .box{
+    width:100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+ }
+ .box-text{
+    width:100%;
+    padding: 3px;
+    text-align: start;
+    font-family: var(--font);
+ }
+ .box-text h1{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--font);
+ }
+ .box-text p{
+    font-size: 1rem;
+    font-size: 14px;
+    margin: 5px 0px;
+    font-family: var(--font);
+ }
+ .box-text span{
+    font-size: 1.1rem;
+    margin-left: 0%;
+    font-weight: 500;
+    font-family: var(--font);
+ }
+.box img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+}
+/* Footer Section  */
+.i-box img{
+    width: 100%;
+    height: 100%;
+}
+.i-box img:hover{
+    transform: scale(.9);
+    transition: all .5s ease-in-out;
+}
+}

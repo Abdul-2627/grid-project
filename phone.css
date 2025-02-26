@@ -101,7 +101,7 @@ font-weight: 600;
         outline: none;
     }
     /* About Section  */
-.about-container{
+    .about-container{
     margin-top: 20px;
     width: 100%;
     height: 100%;
@@ -313,6 +313,10 @@ footer h1{
 .i-box img{
     width: 100%;
     height: 100%;
+}
+.i-box img:hover{
+    transform: scale(.9);
+    transition: all .5s ease-in-out;
 }
 footer div p{
     margin-top: 70px;
