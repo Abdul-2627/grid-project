@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --font: "Ubuntu", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+/* Nav Section  */
+.nav{
+    display: grid;
+    height: 50px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+.logo h6{
+    font-size: 2.1rem;
+    margin-left: 20px;
+    color: white;
+}
+.nav-items ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.nav ul a{
+text-align: center;
+font-size: 1rem;
+margin: 0px 9px;
+border: none;
+outline: none;
+border-radius: 5px;
+padding: 10px 15px;
+color: white;
+text-transform: uppercase;
+background-color: #333;
+font-weight: 600;
+}
+.nav ul a:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+/* Home Section  */
+.home-container{
+display: grid;
+width: 100%;
+height:100vh;
+background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/home.jpg);
+background-position: center;
+background-size: cover;
+}
+.text{
+    width: 50%;
+    position: relative;
+    left: 1%;
+    text-align: center;
+}
+.text h1{
+    font-size: 3rem;
+    color: ivory;
+    margin: 3px 0px;
+}
+
+.text p{
+    opacity: 0.6;
+    font-size: 1rem;
+    margin: 3px 0px;
+    color: ivory;
+}
+.text button{
+    padding:10px 32px;
+    margin: 3px 0px;
+    font-size: 1rem;
+    color: ivory;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 600;
+    cursor:pointer;
+    font-family: var(--font);
+}
+.text button:hover{
+    background-color: #333;
+    border: 1px solid #333;
+    outline: none;
+}
+
+/* About Section  */
+.about-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+.about-container div{
+    margin: 10px;
+    width: 98%;
+    height: 98%;
+}
+
+.about-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.a-text{
+    border-radius: 5px;
+    padding: 10px;background-color: #333;
+    color: white;
+}
+.a-text h1{
+    font-size: 3.6rem;
+    font-family: var(--font);
+}
+.a-text p{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-family: var(--font);
+}
+
+ /* Destintion Section */
+ .header{
+    margin-top: 20px;
+    margin-left: 8px;
+    font-family: var(--font);
+ }
+ .destination-container{
+    display: grid;
+    grid-gap: .5rem;
+    font-family: var(--font);
+    /* grid-template-columns: repeat(4 , 1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+ }
+ .box{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+ }
+ .box-text{
+    width: 300px;
+    padding: 3px;
+    text-align: start;
+    font-family: var(--font);
+ }
+ .box-text h1{
+    text-align: center;
+    font-family: var(--font);
+ }
+ .box-text p{
+    font-size: 14px;
+    margin: 5px 0px;
+    font-family: var(--font);
+ }
+ .box-text span{
+    margin-left: 40px;
+    font-weight: 500;
+    font-family: var(--font);
+ }
+.box img{
+    width: 90%;
+    height:200px;
+}
+/* Gallery Section  */
+.destination1{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: .3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'red1 red1 blue1 blue1'
+    'orange1 white1 white1 violet1'
+    'yellow1 teal1 teal1 violet1';
+}
+.item{
+    text-align: center;
+    align-content:end;
+    background-position: center;
+    background-size: cover;
+    color: #fdfdfde3;
+    text-shadow: 1px 1px 3px grey;
+}
+.red{
+    grid-area: red1;
+    height: 320px;
+    width: auto;
+    background-color: red;
+    background-image: url(./img/m1.jpg);
+}
+.blue{
+    grid-area: blue1;
+    height: 320px;
+    width: auto;
+    background-color: blue;
+    background-image: url(./img/m2.jpg);
+}
+.yellow{
+    grid-area: yellow1;
+    height: 320px;
+    width: auto;
+    background-color: yellow;
+    background-image: url(./img/m3.jpg);
+}
+.orange{
+    grid-area: orange1;
+    height: 320px;
+    width: auto;
+    background-color: orange;
+    background-image: url(./img/m4.jpg);
+}
+.violet{
+    grid-area: violet1;
+    height: auto;
+    width: auto;
+    background-color: violet;
+    background-image: url(./img/m5.jpg);
+}
+.white{
+    grid-area: white1;
+    height: 320px;
+    width: auto;
+    background-color: white;
+    background-image: url(./img/m6.jpg);
+}
+.teal{
+    grid-area: teal1;
+    height: 320px;
+    width: auto;
+    background-color: teal;
+    background-image: url(./img/m7.jpg);
+}
+/* Footer Section  */
+footer{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;   
+}
+footer h1{
+    font-size: 39px;
+    color: #333;
+    margin: 10px 0px;
+    font-family: var(--font);
+}
+
+.i-box{
+    width:100%;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.i-box div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+
+.i-box img{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    margin-top: 50px;
+}
+.icon i{
+    font-size: 3.5rem;
+    padding: 5px;
+    border-radius: 100%;
+    margin: 0px 5px;
+    border: 1px solid #333;
+}
+#ig:hover{
+    color: violet;
+    border-color: violet;
+    transition: color .3s ease-in;
+}
+#fb:hover{
+    color:blue;
+    border-color:blue;
+    transition: color .3s ease-in;
+}
+
+footer div p{
+    margin-top: 50px;
+    padding: 10px 0px;
+    font-family: var(--font);
+}
