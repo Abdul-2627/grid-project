@@ -204,7 +204,7 @@ font-weight: 600;
  .box-text span{
     font-size: 1.1rem;
     margin-left:0;
-    margin-right: 140px;
+    margin-right: 50px;
     font-weight: 500;
     font-family: var(--font);
  }
